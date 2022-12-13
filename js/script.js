@@ -32,3 +32,5 @@ let membri = [
     foto : "barbara-ramos-graphic-designer.jpg"
  }
 ]
+//Stampare su console le informazioni di ogni membro del team;
+console.log(membri);
