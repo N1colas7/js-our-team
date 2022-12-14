@@ -35,9 +35,11 @@ let membri = [
 ]
 
 //Stampare su console le informazioni di ogni membro del team;
-for (let i=0; i<membri.length; i++){
+for(let i=0; i<membri.length; i++){
    let membro = membri[i];
-   for (let key in membro);
+
+   for(let key in membro){
       console.log(membro[key]);
+   }   
 }      
 //Stampare le stesse a schermo e l'immagine tramite stringa;
