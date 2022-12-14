@@ -35,11 +35,19 @@ let membri = [
 ]
 
 //Stampare su console le informazioni di ogni membro del team;
+const card_list = document.getElementById('card')
 for(let i=0; i<membri.length; i++){
    let membro = membri[i];
 
    for(let key in membro){
       console.log(membro[key]);
-   }   
+   }
+   //Milestone 2 + Bonus 1
+   card_list.innerHTML += `
+   <img src="./img/${membro.foto}" width="200px"/>
+   <p>${membro.ruolo}</p>
+   <p>${membro.nome}</p>
+   ` 
+
 }      
-//Stampare le stesse a schermo e l'immagine tramite stringa;
+
